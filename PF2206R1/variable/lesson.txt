@@ -1,0 +1,9 @@
+var: khai báo sau (khai báo sau khi sử dụng, truy xuất lên trên)
+let: khai báo trước (khai báo trước r mới sử dụng được)
+const:
+
+Kiểu dữ liệu:
+chuỗi (string):
+số: 123 (thực, nguyên, âm, dương)
+ký tự: 'A'
+logic (boolean): T, F

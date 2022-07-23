@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+/* bài tập 1 */
+
+#body_bt1{
+    background-image: linear-gradient(45deg, rgb(131, 34, 94), rgb(51, 14, 115));
+}
+
+#btn_bt1{
+    padding: 20px 40px;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}

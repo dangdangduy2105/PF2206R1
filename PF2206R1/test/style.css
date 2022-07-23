@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.nav_item_1{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav_item_2{
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav_item_1 li:hover{
+    color: plum;
+    border-bottom: 3px solid plum;
+}
+
+.nav_container_2{
+    /* list-style-type: none; */
+    border: 1px solid;
+}
+.nav_item_3{
+    list-style-type: none;
+    padding: 20px;
+}
