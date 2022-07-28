@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h1>Tính điểm Đh khối D</h1>
+    <table>
+        <tr>
+            <td><label for="math">Môn Toán</label></td>
+            <td><input type="text" id="math"></td>
+        </tr>
+        <tr>
+            <td><label for="literature">Môn Văn</label></td>
+            <td><input type="text" id="literature"></td>
+        </tr>
+        <tr>
+            <td><label for="english">Môn Anh</label></td>
+            <td><input type="text" id="english"></td>
+        </tr>
+        <tr>
+            <td><label for="area">Khu vực</label></td>
+            <td>
+                <select name="area" id="area">
+                    <option value="kv1" id="kv1">KV1</option>
+                    <option value="kv2" id="kv2" >KV2</option>
+                    <option value="kv2-nt" id="kv2-nt">KV2-NT</option>
+                    <option value="kv3" id="kv3">KV3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="getTotal()">Tính điểm</button></td>
+            <td><button onclick="resetForm()">Nhập lại</button></td>
+        </tr>
+    </table>
+    <h2 id="result" style="color: red;"></h2>
+</body>
+</html>
