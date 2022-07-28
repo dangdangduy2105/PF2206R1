@@ -37,18 +37,22 @@ function btnClick(e){
             case '+':
                 result = input1 + input2;
                 screen.value = result;
+                input1 = result;
                 break;
             case '-':
                 result = input1 - input2;
                 screen.value = result;
+                input1 = result;
                 break;
             case '*':
                 result = input1 * input2;
                 screen.value = result;
+                input1 = result;
                 break;
             case '/':
                 result = input1 / input2;
                 screen.value = result;
+                input1 = result;
                 break;
         }
     }
