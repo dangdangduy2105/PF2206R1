@@ -1,0 +1,32 @@
+body{
+    position: relative;
+}
+
+table{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+table td{
+    border: 1px solid;
+    text-align: center;
+    padding: 15px;
+    font-size: 10px;
+}
+
+table button{
+    font-size: 45px;
+    width: 90%;
+    height: 90%;
+}
+
+table input{
+    height:100px; 
+    width:460px;
+    font-size: 70px;
+}
+
+#screen{
+    text-align: right;
+}
