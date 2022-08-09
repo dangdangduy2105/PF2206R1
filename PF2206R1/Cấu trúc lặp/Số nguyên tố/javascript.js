@@ -6,11 +6,8 @@ function cal(){
 
   
   for(let i = 0; i < num; i++){ 
-    if(i % 2 == 1){
+    if(num % i != 0){
       result.push(i);
-      count++;
-    }else{
-      num++;
     }
   }  
   output.innerText = result;
