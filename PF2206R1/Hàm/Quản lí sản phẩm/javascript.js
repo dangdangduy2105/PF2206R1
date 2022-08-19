@@ -41,20 +41,34 @@ function deleteProduct(value){
 
 function editProduct(value){
   let name = prompt(`Sửa tên cho sản phẩm ${products[value]}`);
+  let check = true;
   for(let i = 0; i < products.length; i++){
-    if(name != products[i]){
-      products[value] = name;
-      console.log(products[value]);
-      createTable();
-    }else{
-      alert("Trùng tên sản phẩm");
+    if(name == products[i]){
+      check = false;
       break;
     }
+  }
+  if(check){
+    products[value] = name;
+    createTable();
+  }else{
+    alert("Trùng tên sản phẩm");
   }
 }
 
 function addProduct(){
   let name = document.getElementById("proName").value;
-  products.push(name);
-  createTable();
+  let check = true;
+  for(let i = 0; i < products.length; i++){
+    if(name == products[i]){
+      check = false;
+      break;
+    }
+  }
+  if(check){
+    products.push(name);
+    createTable();
+  }else{
+    alert("Trùng tên sản phẩm");
+  }
 }
