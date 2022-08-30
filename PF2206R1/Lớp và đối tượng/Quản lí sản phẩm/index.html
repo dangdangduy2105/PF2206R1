@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lí sản phẩm</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td><label for="name">Name</label></td>
+      <td><label for="price">Price</label></td>
+      <td><label for="number">Number</label></td>
+    </tr>
+    <tr>
+      <td><input id="name"></td>
+      <td><input id="price"></td>
+      <td><input id="number"></td>
+    </tr>
+  </table> 
+  <button onclick="createNewProduct()">ADD</button>
+  <table border="1px">
+    <tr>
+      <td>Name</td>
+      <td>Price</td>
+      <td>Number</td>
+      <td>Amount</td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+    <tbody id="listProduct">
+      
+    </tbody>
+  </table>
+  <script src="product.js"></script>
+  <script src="productManager.js"></script>
+</body>
+
+</html>

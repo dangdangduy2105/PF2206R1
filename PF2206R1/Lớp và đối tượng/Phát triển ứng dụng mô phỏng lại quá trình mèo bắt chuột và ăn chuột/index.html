@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cat and Rat</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td></td>
+        <td><h4>RAT</h4></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label for="ratName">Name</label></td>
+        <td><label for="ratWeight">Weight</label></td>
+        <td><label for="speed">Speed</label></td>
+        <td><label>Status</label></td>
+      </tr>
+      <tr>
+        <td><input id="ratName"></td>
+        <td><input id="ratWeight"></td>
+        <td><input id="speed"></td>
+        <td>
+          <input type="radio" name="status" value="dead">Dead
+          <input type="radio" name="status" value="alive">Alive
+        </td>
+      </tr>
+      <tr>
+        <td><span name="error"></span></td>
+      </tr>
+      
+      <tr>
+        <td></td>
+        <td><h4>CAT</h4></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label for="catName">Name</label></td>
+        <td><label for="catWeight">Weight</label></td>
+        <td><label for="maxSpeed">Speed</label></td>
+      </tr>
+      <tr>
+        <td><input id="catName"></td>
+        <td><input id="catWeight"></td>
+        <td><input id="maxSpeed"></td>
+      </tr>
+      <tr>
+        <td><span name="error"></span></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="startCatching" value="Catching"></td>
+        <td><input type="button" id="startEating" value="Eating"></td>
+        <td><button onclick="ourCatnRat()" >Get</button></td>
+      </tr>
+    </table>
+
+    <p id="catchingResult"></p>
+    <p id="eatingResult"></p>
+    
+    <script src="rat.js"></script>
+    <script src="cat.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

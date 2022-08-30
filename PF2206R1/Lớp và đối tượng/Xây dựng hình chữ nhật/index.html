@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td><label for="height">Height</label></td>
+      <td><label for="width">Width</label></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input id="height"></td>
+      <td><input id="width"></td>
+      <td><button onclick="createRectangle()">Create</button></td>
+    </tr>
+    <tr>
+      <td><label for="area">Area</label></td>
+      <td><label for="perimeter">Perimeter</label></td>
+      <td><p id="clear" value="Clear">Clear</p></td>
+    </tr>
+    <tr>
+      <td><p id="area"></p></td>
+      <td><p id="perimeter"></p></td>
+    </tr>
+  </table>
+  <div>
+    <canvas id="DemoCanvas" width="500" height="600"></canvas> 
+  </div>
+  <script src="rectangle.js"></script>
+  <script src="createRectangle.js"></script>
+</body>
+
+</html>
