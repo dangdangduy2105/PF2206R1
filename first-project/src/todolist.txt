@@ -1,0 +1,56 @@
+<template>
+  <div>
+    <input type="text" v-model="newTask">
+    <button @click="addTask()">Thêm</button>
+    <div v-for="(task, index) in tasks" :key="index">
+      <input type="checkbox" v-model="task.done">
+      <span :class="{done: task.done}">{{task.content}}</span>
+    </div>
+  </div>
+</template>
+
+<script>
+
+
+export default {
+  name: 'App',
+  data(){
+    return{
+      newTask:'',
+      tasks:[
+        { content: 'Đánh răng', done: false},
+        { content: 'Ăn sáng', done: false},
+        { content: 'Code', done: false},
+        { content: 'Ngủ', done: false},
+        { content: 'Đi đá bóng', done: false},
+      ], 
+    }
+  },
+  mounted: {
+    //gọi api
+  },
+  components: {
+ 
+  },
+  methods: {
+    addTask: function(){
+      this.tasks.push({
+        content: this.newTask, 
+        done: false
+      });
+    }
+  }, 
+  watch: {
+    newTask: function(newValue, oldValue){
+      console.log(oldValue), 
+      console.log(newValue)
+    }
+  }
+}
+</script>
+
+<style>
+.done{
+  text-decoration: line-through;
+}
+</style>

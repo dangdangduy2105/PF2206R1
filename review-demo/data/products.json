@@ -1,0 +1,184 @@
+{
+   "products": [
+        {
+            "id": 1,
+            "name": "Hippos",
+            "price": 1000,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "hippo"
+        }, 
+        {
+            "id": 2,
+            "name": "Fishs",
+            "price": 55.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "fish-fins"
+        },
+        {
+            "id": 3,
+            "name": "Otters",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "otter"
+        }, 
+        {
+            "id": 4,
+            "name": "Kiwi birds",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "kiwi-bird"
+        },
+        {
+            "id": 5,
+            "name": "Spiders",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "spider"
+        },
+        {
+            "id": 6,
+            "name": "Shrimps",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "shrimp"
+        },
+        {
+            "id": 7,
+            "name": "Mosquitos",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "mosquito"
+        },
+        {
+            "id": 8,
+            "name": "Locusts",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "locust"
+        },
+        {
+            "id": 9,
+            "name": "Horses",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "horse"
+        },
+        {
+            "id": 10,
+            "name": "Frogs",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "frog"
+        },
+        {
+            "id": 11,
+            "name": "Doves",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "dove"
+        },
+        {
+            "id": 12,
+            "name": "Dogs",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "dog"
+        },
+        {
+            "id": 13,
+            "name": "Crows",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "crow"
+        },
+        {
+            "id": 14,
+            "name": "Cows",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "cow"
+        },
+        {
+            "id": 15,
+            "name": "Cats",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "cat"
+        },
+        {
+            "id": 16,
+            "name": "bugs",
+            "price": 24.21,
+            "type": "animals",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "bug"
+        },
+        {
+            "id": 17,
+            "name": "Lemons",
+            "price": 24.21,
+            "type": "fruits",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "lemon"
+        },
+        {
+            "id": 18,
+            "name": "Peppers",
+            "price": 24.21,
+            "type": "vegetables",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "pepper-hot"
+        },
+        {
+            "id": 19,
+            "name": "Carrots",
+            "price": 24.21,
+            "type": "vegetables",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "carrot"
+        },
+        {
+            "id": 20,
+            "name": "Apple",
+            "price": 24.21,
+            "type": "fruits",
+            "description": "This is our product",
+            "quantity": 100,
+            "icon": "apple-whole"
+        }
+   ]
+}

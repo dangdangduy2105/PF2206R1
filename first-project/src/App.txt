@@ -1,0 +1,51 @@
+<template>
+  <div class="container">
+    <h2>{{ title }}</h2>
+        <AddItemComponent @add="addItem" :items="items"></AddItemComponent>
+        <ItemsComponent :items="items"></ItemsComponent>
+      <div class="footer">
+        <hr/>
+        <ChangeTitleComponent v-model="title"></ChangeTitleComponent>
+      </div>
+  </div>
+</template>
+
+<script>
+import AddItemComponent from './components/AddItemComponent.vue';
+import ItemsComponent from './components/ItemsComponent.vue';
+import ChangeTitleComponent from './components/ChangeTitleComponent.vue';
+
+export default {
+  name: "App",
+  data() {
+      return {
+        title: 'My Shopping List',
+        items: [
+              { name: "Bananas", checked: false },
+              { name: "Apples", checked: false },
+              { name: "Cherries", checked: false },
+              { name: "Avocados", checked: false },
+              { name: "Pineapples", checked: false },
+        ],
+      };
+  },
+
+  components: {
+    AddItemComponent,
+    ItemsComponent,
+    ChangeTitleComponent,
+  },
+  methods: {
+    addItem(text){
+      this.items.push({
+        name: text,
+        checked: false
+      })
+    },
+  }
+}
+</script>
+
+<style>
+
+</style>

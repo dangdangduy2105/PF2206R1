@@ -1,0 +1,63 @@
+
+<template>
+  <div>
+    <h2>
+      <span>{{ uppercase(addspace(pomodoro)) }}</span>
+      <ControlComponent />
+    </h2>
+    <StateTitleComponent :isworking="isworking"></StateTitleComponent>
+    <CountdownComponent :leftpad="leftpad"/>
+    <transition name="fade">
+      <KittenComponent v-if="!isworking" />
+    </transition>
+  </div>
+</template>
+
+<script>
+import StateTitleComponent from './StateTitleComponent.vue';
+import ControlComponent from './ControlComponent.vue';
+import CountdownComponent from './components/CountdownComponent.vue';
+import KittenComponent from './components/KittenComponent.vue';
+
+
+export default {
+  name: "App",
+  data() {
+      return {
+        kittens: true,
+        isworking: false,
+        pomodoro: 'pomodoro',
+      };
+  },
+
+  components: {
+    StateTitleComponent,
+    ControlComponent,
+    CountdownComponent,
+    KittenComponent
+},
+  methods: {
+    uppercase(val){
+      return val.toUpperCase();
+    },
+    addspace(val){
+      return val + ' '
+    },
+    leftpad(val){
+      if(val >= 10){
+        return val;
+      }
+      return '0' + val;
+    }
+  }
+}
+</script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+</style>

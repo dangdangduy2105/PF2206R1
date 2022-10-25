@@ -1,0 +1,49 @@
+* DIRECTIVES 
+- v-show
+- v-hide
+- v-if
+- v-else-if
+- v-else
+- v-cloak: utility that will hide anything from rendering until the whole vue application is ready.
+[v-cloak]{
+    display: none;
+} //syntax in css 
+
+
+- v-model 
+- v-bind:[] -> turn HTML attribute to ... -> pass variable to other.
+------------------
+* EVENT AND METHOD
+- v-on:
+    v-on:click="[argument]"
+    v-on:keydup.[modifiers] =""
+
+    MODIFIERS:
+    [event].[modifiers]
+        @keyup.enter, @ketdown.12
+        @click.right
+        @click.prevent.stop
+        
+    => short hand => @click, @keydown..
+
+    - prevent or (prevent default): prevent to reload   
+
+
+methods: {
+    [functionName]: function(){
+
+    }
+
+    or 
+    [functionName](){
+
+    }
+}
+
+
+*
+PROPS:
+ -> contain the names of the info that passing down from the parent to child.
+
+
+COMPUTED: is an object that you can push variable names as a key to...

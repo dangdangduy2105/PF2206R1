@@ -1,0 +1,119 @@
+là một framework js
+khá là giống reactjs
+- vuejs và reactjs khá tương đồng
+    + Date = state
+    + VueX = Redux
+    + Vue router = router
+    + Component = component
+    + props
+    + NPM: node package manager
+- Cài đặt vuejs
+    + nodejs + NPM => npm -v (Kiểm tra version)
+    + cài thêm gói vue cli(command line interface)
+        => npm install -g @vue/cli (cài global có thể sử dụng ở bất cứ đâu trên máy)
+        => tạo project => vue create nameProject
+        + chọn preset trong 3 cái?
+
+- build?, lint? babel?
+
+- node_modules: các gói cài đặt ở trong
+Cấu trúc thư mục:
+    - src: thư mục source code
+        + main.js => file gốc
+            = $mount: vào div id là app
+       
+        + App.vue => component gốc (nơi chứ các component khác) (có thể thay đổi file rồi mount lại)
+        
+
+        + THƯ MỤC assests: bao gồm hình ảnh + font
+
+        + THƯ MỤC components => chứa các component
+
+    + mỗi cái vue component sẽ có đủ các thành phần html, js, css.
+        (dễ dàng tập trung vào 1 thành phần để build)
+        (khi chạy sẽ tách cách thành phần riêng ra và chạy)
+- COMPONENT:
+    + 3 thành phần:
+        = template: html => hiển thị.
+        = script: js => xử lí.
+        = style: css.
+            - hỗ trợ scss.
+            - scoped style: style dành riêng cho component 
+            (<style scoped> => chỉ áp dụng cho component đang làm)
+- TẠO một component:
+    + tạo file .vue trong thư mục component.
+    + Import vào App.vue và khai báo.
+    + mỗi component sẽ có 1 cái thẻ div hoặc 1 thẻ gì đó BẮT BUỘC gọi là ROOT element
+        + ROOT ELEMENT 
+- thư mục dist => có được sau khi build, chứa toàn bộ code đã làm trc đó(dùng khi deploy..)
+
+- TWO-WAYS BINDING: 
+    + bind dữ liệu 2 chiều.
+    + ở trên thay đổi thì ở dưới thay đổi và ngược lại.
+    + một cách tự động.
+    + phụ thuộc vào kiểu của element. (input-text => string, input-checkbox => boolean)
+
+- BINDING:
+    + đẩy dữ liệu từ dưới data lên trên.
+    + dạng:
+        = Value binding: {{tên biến đã khai báo}}.
+        
+        = property binding:
+            + v-bind: [tên thuộc tính] = "tên biến". (v-bind: id="tên biến" => lấy được property id từ dưới)
+            + cách khác => :[tên thuộc tính] = "tên biến".
+        
+        = style and class binding: => :class = "{[tên class: biến đã khai báo]}"
+
+- Model: Liên kết element với property
+    + v-model="[name property]"
+    + 
+
+-Event handling: bắt sự kiện từ các element
+    + v-on: [sự kiện] = "tên sự kiện()"
+    + viết tắt => @[tên sự kiện]
+    
+    + Prevent default event: hủy bỏ event mặc định của element đi.
+    
+    + debounce: đợi 1 thời gian rồi mới thực hiện. 
+    
+    + ref: ánh xạ đến chính element.
+        = đặt trong thẻ ref='nameSomething'
+        = sử dụng trong script 
+            => this.$ref.nameSomething => element html
+
+- Conditional rendering:
+    + v-show: ẩn hiện element theo điều kiện (tạo style display: none).
+    + v-hide: ngược lại v-show.
+    + v-if: cũng ẩn hiện 1 element nhưng khi ẩn sẽ làm biến mất element.
+    + v-else:
+    + v-else-if: 
+    
+- List rendering:
+    + v-for: 
+        => cần key để lọc các div ra với nhau (có thể sử dụng index).
+
+- Method: 
+    + hàm của vue object.
+- Watch: theo dõi sự thay đổi của data.
+
+- Hooks: 
+    + mountded: 
+
+- component: 
+
+- Props: dữ liệu đẩy từ component cha xong component con.
+    + Cách khai báo:
+        dùng mảng tên props
+=> giống như data nhưng được lấy từ bên ngoài.(state bên react).
+    + kiểu object
+
+- Filter: ??
+
+- Lifecycle: vòng đời của component trong vue.
+
+***VueX
+
+-Store:
+    - state: lưu trữ các trạng thái của ứng dụng.
+    - getters:những hàm lấy các state.
+    (helper function => mapGetters)

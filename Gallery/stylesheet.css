@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  .margin{
+    margin: 75% 0;
+  }
+  
+  .parallax{
+    background: url("https://th.bing.com/th/id/R.534789a8c31ae15ff41f79f703a4d993?rik=LWW6w5IFNME0Dg&riu=http%3a%2f%2fwww.tamiu.edu%2fnewsinfo%2fimages%2fstudent-life%2fcampus-scenery.JPG&ehk=e5fJh1WmL4FmfiRfykE2XLDqzu4tbJ0CyBNNmP7A1cw%3d&risl=&pid=ImgRaw&r=0")
+    repeat fixed 100%;
+  }
+  
+  .parallax-inner{
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 500%;
+    color: #FFF;
+    letter-spacing: 3px;
+  }

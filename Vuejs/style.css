@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.main{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.left{
+  z-index: -1;
+}
+.right img{
+  width: 30%
+}

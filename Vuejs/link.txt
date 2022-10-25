@@ -1,0 +1,15 @@
+vue composition api vs options api
+
+
+https://vuejs.org/guide/essentials/template-refs.html#refs-inside-v-for
+
+
+https://vuejs.org/api/reactivity-utilities.html#torefs
+
+https://vuejs.org/api/composition-api-setup.html#accessing-props
+
+https://vuejs.org/guide/essentials/lifecycle.html#lifecycle-diagram
+
+https://vuejs.org/guide/extras/composition-api-faq.html#more-flexible-code-organization
+
+https://auth0.com/blog/getting-started-with-vue-3-composition-api/
